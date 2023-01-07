@@ -1,0 +1,256 @@
+html {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+max-width: 1200px;
+background-color: #f2f2f2;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    background-color: #f2f2f2;
+}
+.logo{
+    width: 15rem;
+    cursor: pointer;
+}
+
+.big-logo{
+    padding-top: 10rem;
+    width: 100%;
+}
+
+.big-logo:hover{
+ opacity: .9;
+ scale: 1.1;
+ transition: .4s ease; 
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+}
+
+.oatmilk:hover {
+    opacity: .9;
+    transition: .45s;
+    scale: 1.2;
+}
+
+header {
+padding: 20px;
+}
+
+nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+}
+
+nav li {
+margin: 0 10px;
+}
+
+nav a {
+text-decoration: none;
+}
+
+.hero {
+text-align: center;
+padding-top: 2rem;
+}
+
+.hero img {
+width: 30rem;
+}
+
+.intro {
+    text-align: left;
+    padding: auto;
+    padding-top: 20%;
+    max-width: 40rem;;
+}
+.testimonials {
+    padding: 10rem 0rem;
+    display: flex;
+    text-align: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.products {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin: 20px;
+}
+
+.product {
+width: 30%;
+text-align: center;
+margin-bottom: 20px;
+}
+
+.product img {
+width: 80%;
+margin: 0 auto;
+display: block;
+}
+
+.testimonials {
+gap: 5rem;
+}
+
+
+.testimonial p:first-of-type {
+font-style: italic;
+}
+hr {
+    border: 1px solid gray;
+    width: 100%;
+    background-color: gray;
+}
+footer{
+    padding: 10rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer h2 {
+    margin: 0;
+    padding: 0;
+}
+.milk-got {
+    margin-right: -4rem;
+    max-width: 70vw;
+}
+
+.email-signup{
+    cursor: pointer;
+}
+
+.email-signup:hover{
+    cursor: pointer;
+    scale: 1.1;
+    transition: .9s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity: .7;
+}
+
+.testimonial {
+    outline: none;
+    border: none;
+}
+
+
+.testimonial img:hover{
+    opacity: 0.95;
+    transition: .45s ease;
+    scale: .93;
+    rotate: -5deg;
+}
+
+a {
+    color: black;
+}
+
+.logo img:hover {
+    opacity: 0.85;
+    transition: .45s ease;
+    scale: .93;
+}
+
+a:hover {
+    text-decoration: underline !important;
+    transition: .45s ease;
+    color: rgb(124, 123, 123);
+}
+
+h2 {
+    font-size: 2.25rem;
+    line-height: 1.1;
+}
+h3{
+    line-height: 1.5;
+    font-weight: 100;
+}
+.oatmilk{
+    margin-right: -5rem;
+}
+.email-signup {
+    animation: rotate 15s infinite linear;
+    transform-origin: 50% 50%;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+@media only screen and (max-width: 900px) {
+   .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    /* padding-left: 5rem;
+    padding-right: 5rem; */
+   }
+   .testimonials {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 7rem;
+
+   }
+   .body{
+    /* padding: 10rem 3rem;
+    margin: 1rem 2rem; */
+    width: 75vw !important;
+   }
+    footer {
+        padding: 10rem 5rem;
+    }
+    .milk-got{
+        margin-right: 0;
+    }
+    .intro{
+        margin: auto;
+        width: 70vw;
+        padding-top: 2rem;
+    }
+    .big-logo{
+        align-self: center;
+        display: flex;
+        width: 80vw;
+        padding-bottom: 3rem;
+        padding-top: 6rem;
+    }
+    .logo-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .oatmilk{
+        margin-right: -5rem;
+    }
+    a{
+        font-size: .9rem;
+    }
+    .logo{
+        max-width: 25vw;
+    }
+}
